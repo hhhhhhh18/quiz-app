@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style1.css" />
+  <title>Online Quiz</title>
+</head>
+
+<body>
+  <div id="auth">
+    <h2>Login/Register</h2>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <h1>Welcome to Quiz</h1>
+
+  <div id="progressContainer">
+    <div id="progressBar">
+      <span id="progressLabel">0%</span>
+    </div>
+  </div>
+
+  <div id="timer"></div>
+
+  <div id="que"></div>
+  <div class="container">
+    <div class="question" id="ques">Question</div>
+    <div class="options" id="opt">Options</div>
+    <div id="buttons">
+      <button id="prev" onclick="prevQuestion()">PREVIOUS</button>
+      <button id="btn" onclick="checkAns()">SUBMIT</button>
+      <button id="nxt" onclick="nextQuestion()">NEXT</button>
+    </div>
+    <div id="score"></div>
+    <button id="restartBtn" onclick="restartQuiz()" style="display: none;">Restart Quiz</button>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>

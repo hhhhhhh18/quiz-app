@@ -1,0 +1,96 @@
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#que {
+  color: black;
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+.container {
+  margin-top: 2%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+.question {
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.options {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #4f98c2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #4f98c2;
+  background-color: white;
+  border: 1px solid #4f98c2;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#score {
+  font-size: 30px;
+  color: darkslategray;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#progressContainer {
+  width: 90%;
+  background: #ddd;
+  height: 25px;
+  border-radius: 20px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #4f98c2, #3e7fa1);
+  border-radius: 20px;
+  position: relative;
+  transition: width 0.4s ease;
+}
+
+#progressLabel {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
